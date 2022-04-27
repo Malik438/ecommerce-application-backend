@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "dbcf6a43-c868-4ab5-ac2e-addd03bc939f",
+		"name": "ecommerce project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "workhouse",
+			"item": [
+				{
+					"name": "get all workhouse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/workhouses",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"workhouses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add workhouse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Hebronworkhiuse\",\n    \"location\":\"Ramallah\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/workhouses",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"workhouses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get workhouse supplier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/workhouses/supplier/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"workhouses",
+								"supplier",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update workhouse",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Ramallahworkhhouse1\",\n    \"location\":\"Ramallah\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/workhouses/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"workhouses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete workhouse",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/workhouses/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"workhouses",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "suppler",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/suppliers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add supplier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"nablussupplier\",\n    \"email\":\"nablus.suppler@gmail.com\",\n    \"phone\":\"012345678\"\n\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/suppliers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suppliers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get supplier by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/suppliers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suppliers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get suppliers products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/suppliers/products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suppliers",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete suppliier",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/suppliers/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suppliers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update suppliser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"nablussupplier\",\n    \"email\":\"nablus.suppler@gmail.com\",\n    \"phone\":\"012340678\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/suppliers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"suppliers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"coffe\",\n    \"price\":400\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
